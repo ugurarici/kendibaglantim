@@ -5,19 +5,37 @@
 
 */
 
-.main-header {
-    background: $white-color;
-    padding: 20px 0;
-    width: 100%;
-    &.fixed{
-        z-index: 99999;
-        position: fixed;
-        top: 0;
+header {
+    height: 500px;
+    background:linear-gradient(rgba(7, 171, 34, 0.5),rgba(2, 19, 0, 0.4)),url(../img/main.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    .header-center-title {
+        text-align: center;
+        padding-top: 70px;
+        font-size: 48px;
+        padding-bottom: 40px;
     }
-    @include responsive(991){
-        padding: 10px 0;
-       .logo img{
-            width: 110px;
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 40px;
+        text-align: center;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .start-button {
+        margin-bottom: 20px;
+    }
+    a {
+        color: #fff;
+        font-size: 16px;
+        &:hover,
+        &:active,
+        &:focus {
+            color: #ccc;
         }
     }
 }
