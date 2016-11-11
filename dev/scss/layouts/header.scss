@@ -6,30 +6,33 @@
 */
 
 header {
-    height: 500px;
-    background:linear-gradient(rgba(7, 171, 34, 0.5),rgba(2, 19, 0, 0.4)),url(../img/main.jpeg);
+    min-height: 500px;
+    background:linear-gradient(rgba(0,0,0, 0.7),rgba(2, 19, 0, 0.4)),url("../img/kendibaglantim-mutlu-adam.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: #fff;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-top: 40px;
+
     .header-center-title {
-        text-align: center;
-        padding-top: 70px;
+        padding-top: 30px;
         font-size: 48px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
     p {
         font-size: 24px;
         line-height: 36px;
-        padding-bottom: 40px;
-        text-align: center;
+        padding-bottom: 20px;
         width: 65%;
         margin: 0 auto;
     }
     .start-button {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        font-size: 24px;
     }
-    a {
+    a.more-info {
         color: #fff;
         font-size: 16px;
         &:hover,

@@ -29,13 +29,13 @@ textarea{
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 40px;
-    padding-bottom: 40px;
     .features-box {
         background:#ddd;
         min-height: 250px;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 30px;
+        margin-bottom: 30px;
         padding-top: 30px;
         text-align: center;
         h2 {
@@ -51,11 +51,12 @@ textarea{
 }
 
 .video {
-  background:linear-gradient(rgba(121, 255, 143, 0.9),rgba(94, 156, 86, 0.9)),url(../img/main.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .8)),url("../img/main.jpeg");
   background-repeat: no-repeat;
+  color: #fff;
   background-position: center center;
   background-size: cover;
-  min-height: 500px;
+  min-height: 200px;
   padding-top: 40px;
   padding-bottom: 40px;
   .video-title {
@@ -70,6 +71,7 @@ textarea{
         font-size: 22px;
         line-height: 24px;
       span {
+        color: #000;
         background:#fcfcfc;
         padding: 10px;
         margin-right: 10px;
@@ -90,7 +92,6 @@ textarea{
 .social-media {
   .social-media-box {
     padding: 0;
-    margin-bottom: 40px;
     a {
       .facebook {
         background:#3B5998;
@@ -123,6 +124,7 @@ textarea{
 }
 
 .faq {
+  margin-top: 40px;
   .faq-title {
     font-size: 32px;
     padding-bottom: 40px;
@@ -132,5 +134,20 @@ textarea{
     .panel-heading {
       padding: 20px;
     }
+  }
+}
+
+section.devices{
+  padding: 40px 0;
+  text-align: center;
+
+  h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  img{
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
