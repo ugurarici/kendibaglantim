@@ -5,6 +5,15 @@
 
 */
 
+.navbar {
+    border: 0;
+    padding: 15px 0;
+    margin: 0;
+    background: #ddd;
+    font-size: 16px;
+    color: #fff;
+}
+
 header {
     min-height: 500px;
     background:linear-gradient(rgba(0,0,0, 0.7),rgba(2, 19, 0, 0.4)),url("../img/kendibaglantim-mutlu-adam.jpg");
