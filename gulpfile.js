@@ -121,19 +121,11 @@ Kullanilan eklentilerde bulunan javascriptlerin (dev/vendor) birlestirilip publi
 
 
 gulp.task("plugins_js", function() {
-	return gulp.src([
-		dev_vendor_dir+"animsition/dist/js/animsition.min.js",
-		dev_vendor_dir+"jquery-slimscroll/jquery.slimscroll.min.js",
-		dev_vendor_dir+"fullpage.js/vendors/scrolloverflow.min.js",
-		dev_vendor_dir+"fullpage.js/dist/jquery.fullpage.min.js",
-		dev_vendor_dir+"matchHeight/dist/jquery.matchHeight-min.js",
-		dev_vendor_dir+"theia-sticky-sidebar/js/theia-sticky-sidebar.js",
-		dev_vendor_dir+"photoswipe/dist/photoswipe.min.js",
-		dev_vendor_dir+"photoswipe/dist/photoswipe-ui-default.min.js"
-		])
+	/*return gulp.src()
 	.pipe(concat("plugins.min.js"))
 	.pipe(uglify_js())
 	.pipe(gulp.dest(assets_js_dir));
+	*/
 });
 
 
@@ -148,16 +140,14 @@ Kullanilan eklentilerde bulunan css'lerin (dev/vendor) birlestirilip public/asse
 */
 
 gulp.task("plugins_css", function() {
-	return gulp.src([
-		dev_vendor_dir+"animsition/dist/css/animsition.min.css",
-		dev_vendor_dir+"fullpage.js/dist/jquery.fullpage.min.css",
-		dev_vendor_dir+"photoswipe/dist/photoswipe.css"
-		])
+	/*
+	return gulp.src()
 	.pipe(concat_css("plugins.min.css"))
 	.pipe(minify_css({
 		compatibility: 'ie8'
 	}))
 	.pipe(gulp.dest(assets_css_dir));
+	*/
 });
 
 

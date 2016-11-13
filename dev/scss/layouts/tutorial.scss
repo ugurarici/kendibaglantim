@@ -1,0 +1,41 @@
+.tutorial {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	
+	.content {
+		h1 {
+			font-size: 32px;
+			color: $def-text-color;
+			padding-bottom: 10px;
+		}
+
+		p {
+			font-size: 15px;
+			color: $def-text-color;
+			line-height: 26px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		iframe {
+			float: right;
+			margin-bottom: 5px;
+			margin: 20px;
+			border: 2px solid #212121; 
+		}
+
+		pre {
+			display: block;
+			padding: 9.5px;
+			margin: 0 0 10px;
+			font-size: 13px;
+			line-height: 1.42857143;
+			color: #333;
+			word-break: break-all;
+			word-wrap: break-word;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+	}
+}
