@@ -11,5 +11,5 @@ var plugins = {}
 $(document).ready(function() {
 
     /* Eklentileri cagir */
-    plugins.call();
+    //plugins.call();
 });

@@ -38,22 +38,24 @@
 		</div>
 	</section>
 
-	<section class="video">
+	<section class="video" id="more-info-video">
 		<div class="container">
 			<div class="col-md-6">
-				<h1 class="video-title">Ortalama 15 dakika içinde <br> güvenli bağlantınız hazır</h1>
+				<h1 class="video-title">Ortalama 20 dakika içinde <br> güvenli bağlantınız hazır</h1>
 				<div class="setup-steps">
 					<p><span>1</span>Sunucunuzu Kurun</p>
 					<p><span>2</span>Cihazlarınızı Yapılandırın</p>
 					<p><span>3</span>Güvenli ve Hızlı İnternetin Tadını Çıkarın!</p>
 				</div>
 				<p>
-					Anlaşılır video yönlendirmeleri ile kendi VPN kurulumunuzu basit bir şekilde tamamlayın. İnternete hızlı ve güvenli bağlanın.
+					Çayınızı alın ve anlaşılır video yönlendirmeleri ile kendi VPN kurulumunuzu basit bir şekilde tamamlayın. İnternete hızlı ve güvenli bağlanın.
 				</p>
-				<a href="#" class="btn btn-success btn-lg">Şimdi Başlayın</a>
+				<a href="https://www.youtube.com/playlist?list=PL2jZMx6EhNFOCZPf9v4AGzR6_afE8tegw" target="_blank" class="btn btn-success btn-lg">Şimdi Başlayın</a>
 			</div>
 			<div class="col-md-6">
-				<iframe width="540" height="358" style="padding-top: 20px" src="https://www.youtube.com/embed/SusN8g45JiI" frameborder="0" allowfullscreen></iframe>
+				<div class="videoWrapper">
+					<iframe width="540" height="358" style="padding-top: 20px" src="https://www.youtube.com/embed/SusN8g45JiI" frameborder="0" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -85,5 +87,15 @@
 
 	@@include('../layouts/footer.html')
 	@@include('../layouts/script.html')
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".more-info").click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({
+					scrollTop: $("#more-info-video").offset().top
+				}, 500);
+			});
+		});
+	</script>
 </body>
 </html>
