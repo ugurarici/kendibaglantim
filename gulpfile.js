@@ -51,10 +51,10 @@ Dev (dev) klasorunde projenin yapilandirilandigi klasorler ve dosyalar bulunur.
 */
 
 var public_dir = "public/",
-assets_dir = "public/assets/",
-assets_css_dir = "public/assets/css/",
-assets_js_dir = "public/assets/js/",
-assets_img_dir = "public/assets/img/",
+assets_dir = public_dir + "assets/",
+assets_css_dir = public_dir + "assets/css/",
+assets_js_dir = public_dir + "assets/js/",
+assets_img_dir = public_dir + "assets/img/",
 dev_dir = "dev/",
 dev_js_dir = "dev/js/",
 dev_layouts_dir = "dev/layouts/",
