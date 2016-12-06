@@ -1,0 +1,50 @@
+{# giris.twig #}
+{% extends "../layouts/master.twig" %}
+{% set vars = {'title': 'Kendibaglantim.com - Giriş', 'active_page':1} %}
+
+{% block content %}
+	<h1>Giriş</h1>
+	<iframe width="440" height="258" src="https://www.youtube.com/embed/hxh3yQmQcGs" frameborder="0" allowfullscreen></iframe>
+	<p class="text-justify">
+		Şu anda bu sayfadaysanız, kendi VPN sunucunuza sahip olmaya bir adım daha yaklaştınız demektir. Önceki yazımızda ve videomuzda internetin ne olduğu,
+		internet üzerindeki iletişimin nasıl sağlandığı ile ilgili olabildiğince yalın bir şekilde bir bilgilendirme yaparak, neden kendi VPN sunucunuza sahip olmanız gerektiğini anlattık. 
+	</p>
+	<p class="text-left">
+		Şimdi kendi VPN sunucunuza sahip olmak için bir adım attınız. Daha önce bu işlemin maliyetsiz ve kısa süreli olduğunu söylemiştik. İzleyeceğimiz adımları listeleyecek olursak;
+	</p>  
+	<table class="table table-bordered">
+  		<thead>
+  			<tr class="active">
+  				<th width="30%">İşlem</th>
+  				<th width="10%">Süre</th>
+  				<th>Açıklama</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr>
+  				<td>Sunucu Kiralama</td>
+  				<td>~3 dk.</td>
+  				<td>İlk olarak VPN servisimizi oluşturmak için üzerine bir takım programlar kuracağımız ve internete onun üzerinden geçerek ulaşacağımız VPN sunucumuzu kiralayacağız.</td>
+  			</tr>
+  			<tr>
+  				<td>Sunucu ve OpenVPN Kurulumu</td>
+  				<td>~10 dk.</td>
+  				<td>Sunucumuz üzerinde openvpn kurulumu ve gerekli ayarları yapacağız.</td>
+  			</tr>
+  			<tr>
+  				<td>İstemci Yapılandırması</td>
+  				<td>~5 dk.</td>
+  				<td>Sunucumuz üzerinde openvpn kurulumu ve gerekli ayarları yapacağız.</td>
+  			</tr>
+  		</tbody>
+	</table>
+	<p class="text-justify">Bütün bu işlemler ortalama 20 dakika sürecek ve siz bundan sonraki hayatınızda kendi VPN sunucunuz ile güvenle internette gezinebileceksiniz.</p>
+	<div class="alert alert-info" role="alert"><b>İyi Haber!</b> Sunucu kiralama işlemi için iki aylık sunucu kiralamaya yetecek DigitalOcean kupon kodu bir sonraki yazımızda!</div>
+	<div class="videos pull-right">
+		<a href="sunucukiralama.html" class="next-video btn btn-primary">Sonraki Adım</a>
+	</div>
+	<div class="videos pull-right">
+		<a href="#" class="next-video btn btn-primary">Windows</a>
+		<a href="#" class="next-video btn btn-primary">Mac</a>
+	</div> 
+{% endblock %}

@@ -1,0 +1,25 @@
+{# master.twig #}
+<!DOCTYPE html>
+<html lang="tr">
+{% include 'head.twig' with vars %} 
+<body>
+	{% include 'header-2.twig' %}
+
+	<div class="tutorial">
+		<div class="container">
+			<div class="col-md-3">
+				{% include 'sidebar.twig' with vars %}
+			</div>
+			<div class="col-md-9">
+				<div class="content"> 
+    				{% block content %} 
+    				{% endblock %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% include 'footer.twig' %}
+	{% include 'script.twig' %}
+</body>
+</html>

@@ -1,0 +1,52 @@
+{# sunucukiralama.twig #}
+{% extends "../layouts/master.twig" %}
+{% set vars = {'title': 'Kendibaglantim.com - Sunucu Kiralama', 'active_page':2} %}
+
+{% block content %}
+	<h1>Sunucu Kiralama</h1>
+	<iframe width="440" height="258" src="https://www.youtube.com/embed/_yZmhng-2hc" frameborder="0" allowfullscreen></iframe>
+	<p class="text-justify">
+    VPN sunucusu olarak kullanacağımız makineyi kiralamak için biz Digital Ocean'ı kullandık. Sizlere de öneriyoruz fakat dilerseniz tabii ki de kendi seçtiğiniz bir servis sağlayacı kullanmak istiyorsanız aynı işlemleri herhangi bir yerden aldığınız sunucu üzerinde de kullanabilirsiniz. Bizim Digital Ocean'ı seçme ve bu servis üzerinden anlatma nedenlerimiz şöyle;
+	</p>
+  <table class="table table-bordered"> 
+      <tbody>
+        <tr class="info">
+          <td>Neden Digital Ocean?</td>
+        </tr>
+        <tr>
+          <td>Avantajlı paketleri sayesinde kendi VPN sunucumuzu kiralamanın aylık bize maaliyeti 5$ olacaktır.</td> 
+        </tr>
+        <tr>
+          <td>Verdiği 10$'lık kredi sayesinde 2 ay boyunca ücretsiz olarak kullanabileceğimiz bir VPN sunucuya sahip olacağız.</td> 
+        </tr>
+        <tr>
+          <td>Dünyaca ünlü ve güvenilir bir servisten hizmet alıyor olacağız, kolay kullanılabilir arayüzü sayesinde işlemlerimizi kolayca gerçekleştireceğiz.</td>
+        </tr>
+      </tbody>
+  </table>
+	<p class="text-left">
+		Digital Ocean'a <a href="https://m.do.co/c/aae6a966b908" target="_blank">buraya tıklayarak</a> <strong>10$ değerinde DigitalOcean hediye çeki</strong>ni alarak kaydolabilirsiniz. Dilerseniz <a href="https://www.digitalocean.com" target="_blank">buraya tıklayarak</a> hediye çekini almadan da devam edebilirsiniz.
+	</p>
+ 
+  <table class="table table-bordered"> 
+      <thead>
+        <th>Adım</th>
+        <th>İşlem</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#1</td>
+          <td>Karşımıza çıkan ilk sayfada `Email Adress` kutucuğuna email adresimizi, `Password` kutucuğuna ise şifremizi yazarak `Create Account` butonuna tıklayıp, kaydımızı gerçekleştiriyoruz.</td>
+        </tr>
+        <tr>
+          <td>#2</td>
+          <td>Ardından hediye kodumuzu alabilmek için karşımıza kart ve fatura bilgilerimizi isteyen bir sayfa geliyor. Kartınız kesinlikle izinsiz kullanılmıyor ve bilgiler SSL sertifikası ile korunarak işleme alınıyor. Eğer bu konuda bir şüpheniz varsa sanal kart veya banka kartı da kullanabilirsiniz. Sitenin üzerinde bulunan uyarıda da yazdığı gibi bu aşamada kartınızdan bir ücret tahsil edilmeyecektir. Bu bilgiler ileride satın alma işlemi gerçekleştirirseniz, işinizi kolaylaştırmak ve bu satın alımı faturalandırmak içindir.</td>
+        </tr>
+      </tbody>
+  </table>
+
+	<div class="videos pull-right">
+		<a href="#" class="next-video btn btn-primary">Windows için sonraki adım</a>
+		<a href="#" class="next-video btn btn-primary">MacOS için sonraki adım</a>
+	</div> 
+{% endblock %}

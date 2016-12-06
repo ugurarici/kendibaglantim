@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
-@@include('../layouts/head.html',{"title":"Kendi Bağlantım - Kendi VPN Servisinizi Kurun"})
-
+{% include '../layouts/head.twig' with {'title': 'Kendibaglantim.com - Kendi Güvenli Bağlantınızı Kurun'} %}  
 <body>
-	@@include('../layouts/header.html') 
-
+{% include '../layouts/header.twig' %} 
 	<section class="features">
 		<div class="container">
 			<div class="col-md-3 col-sm-6">
@@ -50,7 +48,8 @@
 				<p>
 					Çayınızı alın ve anlaşılır video yönlendirmeleri ile kendi VPN kurulumunuzu basit bir şekilde tamamlayın. İnternete hızlı ve güvenli bağlanın.
 				</p>
-				<a href="https://www.youtube.com/playlist?list=PL2jZMx6EhNFOCZPf9v4AGzR6_afE8tegw" target="_blank" class="btn btn-success btn-lg">Şimdi Başlayın</a>
+				<a href="internetvevpn.html" class="btn btn-primary btn-lg">Dokümantasyon ile başlayın</a>
+				<a href="https://goo.gl/fNOaYl" target="_blank" class="btn btn-danger btn-lg">Videolar ile başlayın</a>
 			</div>
 			<div class="col-md-6">
 				<div class="videoWrapper">
@@ -85,8 +84,8 @@
 
 	<div class="clear"></div>
 
-	@@include('../layouts/footer.html')
-	@@include('../layouts/script.html')
+	{% include '../layouts/footer.twig' %} 
+	{% include '../layouts/script.twig' %} 
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".more-info").click(function(e) {

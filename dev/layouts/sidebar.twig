@@ -1,0 +1,18 @@
+<div class="list-group" id="menu">
+	<a href="#" class="list-group-item disabled">Kurulum Adımları</a>
+	<a href="internetvevpn.html" class="list-group-item {{ active_page == 0 ? 'active' : '' }}">Tanıtım: İnternet ve VPN</a>
+	<a href="giris.html" class="list-group-item {{ active_page == 1 ? 'active' : '' }}"><span class="badge">0</span> Giriş</a>
+	<a href="sunucukiralama.html" class="list-group-item {{ active_page == 2 ? 'active' : '' }}"><span class="badge">1</span> Sunucu Kiralama</a>
+	<a href="javascript:void(1);" class="list-group-item {{ active_page == 3 ? 'active' : '' }}" data-toggle="collapse" data-target="#server" data-parent="#menu"><span class="badge">2</span>Sunucu Kurulumu</a>
+	<div id="server" class="sublinks collapse {{ active_page == 3 ? 'in' : '' }}">
+		<a href="macossunucukurulumu.html" class="list-group-item small">MacOS - Sunucu Kurulumu</a>
+		<a href="windowssunucukurulumu.html" class="list-group-item small">Windows - Sunucu Kurulumu</a>
+	</div>
+	<a href="javascript:void(1);" class="list-group-item {{ active_page == 4 ? 'active' : '' }}" data-toggle="collapse" data-target="#client" data-parent="#menu"><span class="badge">3</span>İstemci Yapılandırması</a>
+	<div id="client" class="sublinks collapse {{ active_page == 4 ? 'in' : '' }}">
+		<a href="macosistemciyapilandirma.html" class="list-group-item">MacOS - İstemci Yapılandırması</a>
+		<a href="windowsistemciyapilandirma.html" class="list-group-item">Windows - İstemci Yapılandırması</a>
+		<a href="iosistemciyapilandirma.html" class="list-group-item">iOS - İstemci Kurulumu</a>
+		<a href="androidistemciyapilandirma.html" class="list-group-item">Android - İstemci Kurulumu</a>
+	</div>
+</div>
