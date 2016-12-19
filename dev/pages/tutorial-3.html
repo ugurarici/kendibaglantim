@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+@@include('../layouts/head.html',{"title":"Kendi Bağlantım - Kendi VPN Servisinizi Kurun"})
+
+<body>
+  @@include('../layouts/header-2.html') 
+
+  <div class="tutorial">
+    <div class="container">
+      <div class="col-md-3">
+        <h1>Kurulum Adımları</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Tanıtım: İnternet ve VPN</a>
+          <a href="#" class="list-group-item">#0 Giriş</a>
+          <a href="#" class="list-group-item">#1 Sunucu Kiralama</a>
+          <a href="#" class="list-group-item">#2A Mac Üzerinden Sunucu Kurulumu</a>
+          <a href="#" class="list-group-item">#2B Windows Üzerinden Sunucu Kurulumu</a>
+          <a href="#" class="list-group-item">#3 Mac Bilgisayarlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#4 Windows Bilgisayarlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#5 iOS Cihazlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#6 Android Cihazlara İstemci Kurulumu</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="content">
+          <h1>#3 Mac Bilgisayarlara İstemci Kurulumu</h1>
+          <iframe width="440" height="258" src="*****" frameborder="0" allowfullscreen></iframe>
+          <p>
+            Kendi bilgisayarımıza kopyaladığımız .ovpn dosyalarının çalışabilir hale gelmesi için OpenVpn bağlantısını sağlayabilecek bir programa ihtiyaç duyarız.  MacOS için Tunnelblick programını kullanarak OpenVPN sunucusuna güvenli bağlantımızı sağlayabiliriz. Bunun için:
+            <ul>
+            <li>tunnelblick.net adresinden son stabil yayını indirip çalıştırıyoruz.</li>
+            <li>Kurulum sırasında ikonu Spotlightın yanına yerleştiri seçersek bağlantımızın aktif olup olmadığını .görmek daha da kolaylaşacaktır.</li>
+            <li>Yapılandırılmış dosyalar var mı? kısmında dosyamız var seçeneğine tıklayıp ayar dosyalarımız olan .ovpn uzantılı dosyamızı seçiyoruz.</li>
+            <li>Kurulum tamamlandıktan sonra sağ üst köşede Tunnelblick işaretini göreceğiz bu ikona tıkladığımızda 'bağlı değil' şeklinde gözükecektir. Bağlan butonuna tıkladığımızda otomatik olarak vpn sunucusu üzerinden bağlanacaktır.</li>
+            <li>Bağlantıyı test etmek için vpn bağlı değilken whatismyipaddress.com web sayfasına giderek ve hız testi yaparak sonuçlarımızı not alalım. Daha sonra vpn e bağlandıktan sonra aynı işlemleri tekrarladığımızda ip adresinizin ve internet hızınızın değiştiğini göreceksiniz.</li>
+            </ul>
+          </p>
+          <div class="videos pull-right">
+            <a href="#" class="next-video btn btn-primary">İleriki Video</a>
+          </div>
+          <div class="videos pull-right">
+            <a href="#" class="next-video btn btn-primary">Windows</a>
+            <a href="#" class="next-video btn btn-primary">Mac</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../layouts/footer.html')
+  @@include('../layouts/script.html')
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+@@include('../layouts/head.html',{"title":"Kendi Bağlantım - Kendi VPN Servisinizi Kurun"})
+
+<body>
+  @@include('../layouts/header-2.html') 
+
+  <div class="tutorial">
+    <div class="container">
+      <div class="col-md-3">
+        <h1>Kurulum Adımları</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Tanıtım: İnternet ve VPN</a>
+          <a href="#" class="list-group-item">#0 Giriş</a>
+          <a href="#" class="list-group-item">#1 Sunucu Kiralama</a>
+          <a href="#" class="list-group-item">#2A Mac Üzerinden Sunucu Kurulumu</a>
+          <a href="#" class="list-group-item">#2B Windows Üzerinden Sunucu Kurulumu</a>
+          <a href="#" class="list-group-item">#3 Mac Bilgisayarlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#4 Windows Bilgisayarlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#5 iOS Cihazlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#6 Android Cihazlara İstemci Kurulumu</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="content">
+          <h1>#2B Windows Üzerinden Sunucu Kurulumu</h1>
+          <iframe width="440" height="258" src="*****" frameborder="0" allowfullscreen></iframe>
+          <p>
+          Daha önceki adımda makine ve sunucumuzu oluşturduk. Şimdi Windows içerisinden bu sunucuya bağlanacağız ve vpn bağlantımızı kuracağız.
+          </p>
+<p>
+  Öncelikle bize e-posta ile gönderilen sunucu bağlantı bilgilerini kullanarak sunucuya bağlanacak ve gerekli kurulumları yapacağız. Windows kullanıcılarının sunucuya bağlanabilmesi için Putty isimli programı indirmesi gerekiyor.
+İndirmek için tıklayınız:  <a href="http://putty.org">http://putty.org</a>
+Tıkladıktan sonra putty’i seçiyor, putty.exe ve pscp.exe dosyalarını indiriyoruz.
+</p>
+
+<p>
+  putty.exe'yi çalıştırıyoruz ve açılan pencerede Host Name (or IP adress) kısmına bize gelen e-postadaki IP adresini yazıyoruz.  SSH seçeneğini işaretleyip başka bir değişiklik yapmadan onaylıyoruz. Açılan PuTTY Security Alert penceresinde evet'e tıklayıp devam ediyoruz. 
+Artık programımızı çalıştırdık, terminal üzerinden işlemlerimizi yapmaya başlayabiliriz.
+</p>
+
+<p>
+  login as: kısmına root yazıp enter'a basıyoruz.
+Bizden parola istiyor, e-posta ile gelen parolayı kopyalıyoruz. Terminal ekranına gelip sağ tıklıyoruz. Bu şekilde parola yapıştırılmış oluyor. Bu işlemden sonra parolayı göremememiz normal, yalnızca enter'a basmamız gerekiyor.
+</p>
+
+<p>
+  Makine ile bağlantımızı kurduk. Artık bu parolayı değiştirip kendi parolamızı oluşturmamız gerekiyor. Öncelikle e-postada bulunan eski paraloyı sağ tık ile yapıştırıyor ve enter'a basıyoruz, ardından yeni parolamızı oluşturuyoruz, enter'a basıyoruz.
+Yeni parolamızı tekrarlıyoruz.
+Sunucuya bağlandık. Şimdi sunucu üzerinden işlemlerimize devam edeceğiz.
+</p>
+
+<p>
+  Sunucudaki uygulamaları güncellemek için;
+root@frankfurt-vpn:~# yazan kısma apt-get update komutunu yazyor ve enter’a basıyoruz.
+</p>
+
+<p>
+  Sunucuda bulunan uygulamaları yükseltmek için;
+işlem tamamlandıktan sonra bu kez apt-get upgrade komutunu yazıp devam ediyoruz.
+Daha fazla alan kullanılacak kabul edip etmediğimizi soracak, y yazıp enter'a basıyoruz.
+Artık sunucumuz yeni bir kuruluma hazır hale geldi.
+</p>
+
+<p>Basit bir şekilde sunucumuz üzerine OpenVPN kurabilmek için github üzerinde paylaşılan bir script’i kullanacağız.
+Script’e ulaşmak için tıklayınız:  <a href="http://github.com/Nyr/openvpn-install">http://github.com/Nyr/openvpn-install</a></p>
+
+<p>Bu linke tıkladıktan sonra kurulum kısmında bulunan wget https:// ile başlayan komutu kopyalayıp sağ tıklayarak terminale yapıştırıyoruz. IP adresini soran kısım zaten dolu olarak karşımıza geliyor, hiç bir şey yazmadan enter'a basıyoruz. </p>
+
+<p>Hangi port üzerinden OpenVPN çalıştırmak istediğimizi soracak, eski değeri silip daha güvenli bir port olduğu için 443 yazıyor ve enter'a basıyoruz. Hangi DNS'i kullanmak istediğimizi soruyor, 1 yazarak devam ediyoruz.</p>
+
+<p>
+  Şimdi bizden bir istemci ismi isteyecek, kendi isteğimize göre adlandırıp devam ediyoruz.
+Girdiğimiz bilgiler ile OpenVPN'in kurulmasını onaylıyor musunuz sorusunu enter'a basıp geçiyoruz ve işlemin bitmesini bekliyoruz.
+</p>
+
+<p>Eğer birden fazla istemci kurmak istiyorsak;
+mesela kendi vpn’imizi hem bilgisayarımızda hem de telefonumuzda kullanmak istiyorsak, script’te bulunan komutu tekrar kopyalayıp terminale yapıştırıyoruz.</p>
+<p>Artık sıfırdan kurulum yerine bir menü geliyor karşımıza. 
+Yeni bir kullanıcı oluşturmak için 1 yazıyoruz. Şimdi de ikinci istemcimizi adlandırıyoruz. İkinci istemcimiz de oluştu.</p>
+
+<p>Oluşturduğumuz istemci dosyaları sunucu üzerinde kayıtlı. Bu dosyaları kendi bilgisayarımıza kopyalamamız ve ilgili programa okutmamız gerekecek. Bu yüzden exit yazıp enter'a basarak terminalden çıkış yapıyoruz.</p>
+
+<p>İndirdiğimiz pscp.exe dosyasını komut satırından hızlıca erişebilmek adına bilgisayarımızda C:// içine kopyalıyoruz. Windows ve R tuşuna aynı anda basarak Çalıştır penceresini açıyoruz, cmd yazıp devam ediyoruz. </p>
+
+<p>
+  Açılan komut satırı ekranına cd ../ yazıp enter'a basarak Users kısmına, ardından tekrar cd ../ yazarak C:\ dizini içine gelmiş oluyoruz. set PATH=C:\ yazıp enter’a basıyoruz, son olarak pscp komutunu yazıyor enter'a basıyoruz. 
+Artık Putty aracılığı ile Windows cmd üzerinden işlem yapabileceğiz.
+</p>
+
+<p>
+  Şimdi ise cmd üzerinden, uzakta oluşturduğumuz dosyaları bilgisayarımıza alacağız.
+pscp root@IPADRESI:CLIENT.ovpn C:\Users\KULLANICI\Desktop\CLIENT.ovpn
+komutunu aşağıdaki açıklamaları dikkate alarak kendimize göre düzenliyor ve enter'a basıyoruz.
+IPADRESI kısmına kendi IP adresinizi,
+CLIENT kısmına dosyayı oluştururken verdiğiniz istemci adını,
+KULLANICI kısmına bilgisayarınızdaki kullanıcı adınızı yazmalısınız.
+Onay için parola istenecek, parolamızı yazıp devam ediyoruz.
+</p>
+
+<p>
+  Eğer birden fazla istemci için dosya oluşturduysak yukarıdaki komutu diğer dosya için güncelleyip tekrar onaylıyoruz. Bu şekilde sunucudaki dosyayı masaüstüne kopyalamış olduk.
+</p>
+          <div class="videos pull-right">
+            <a href="#" class="next-video btn btn-primary">İleriki Video</a>
+          </div>
+          <div class="videos pull-right">
+            <a href="#" class="next-video btn btn-primary">Windows</a>
+            <a href="#" class="next-video btn btn-primary">Mac</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../layouts/footer.html')
+  @@include('../layouts/script.html')
+</body>
+</html>

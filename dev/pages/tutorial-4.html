@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+@@include('../layouts/head.html',{"title":"Kendi Bağlantım - Kendi VPN Servisinizi Kurun"})
+
+<body>
+  @@include('../layouts/header-2.html') 
+
+  <div class="tutorial">
+    <div class="container">
+      <div class="col-md-3">
+        <h1>Kurulum Adımları</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Tanıtım: İnternet ve VPN</a>
+          <a href="#" class="list-group-item">#0 Giriş</a>
+          <a href="#" class="list-group-item">#1 Sunucu Kiralama</a>
+          <a href="#" class="list-group-item">#2A Mac Üzerinden Sunucu Kurulumu</a>
+          <a href="#" class="list-group-item">#2B Windows Üzerinden Sunucu Kurulumu</a>
+          <a href="#" class="list-group-item">#3 Mac Bilgisayarlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#4 Windows Bilgisayarlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#5 iOS Cihazlara İstemci Kurulumu</a>
+          <a href="#" class="list-group-item">#6 Android Cihazlara İstemci Kurulumu</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="content">
+          <h1>#4 Windows Bilgisayarlara İstemci Kurulumu</h1>
+          <iframe width="440" height="258" src="*****" frameborder="0" allowfullscreen></iframe>
+          <p>
+            Sunucumuzu kiralayıp üzerine OpenVPN kurulumunu da yaptıktan sonra elimizde bağlantı profil dosyalarımız olacak.
+
+Şimdi Windows bilgisayarımızdan bu güvenli bağlantı ayar dosyasını kullanarak nasıl internete bağlanabileceğimizi görelim.
+
+Windows’ta OpenVPN bağlantısı yapabilmek için öncelikle OpenVPN Connect programını indiriyoruz.
+İndirmek için tıklayınız: <a href="#">http://assets.unotelly.com/downloads/apps/windows/openvpn-client.msi</a>
+
+Programı indirip kurulumunu yaptıktan sonra, daha önce sunucumuzda oluşturup bilgisayarımıza indirdiğimiz .ovpn uzantılı ayar dosyamıza çift tıklayarak açıyoruz.
+
+Bu dosyanın otomatik olarak OpenVPN Connect programı ile açılmış olması lazım. İlk açılma sırasında bize içeri aktarma ayarlarını soracaktır. Bu ayarlar bölümünde program bize; ileride baktığımızda hatırlayabilmemiz için program içinde gözükecek profil adı, profilin bilgisayardaki tüm kullanıcılar tarafından kullanıp kullanılamayacağını ve bu profile her 
+zaman güvenilip güvenilmeyeceğini soracaktır. Önemli olan en alttaki “Her zaman güven” seçeneğinin seçili olmasıdır, diğer ayarları kendi tercihinize göre yapabilirsiniz.
+
+Bu ayar penceresini onaylamanızın ardından OpenVPN Connect programı bağlantınız için hazırdır. Bağlantı profilinizin üstüne tıklayarak Windows bilgisayarınızda kendi güvenli bağlantınızı aktif edebilirsiniz. Bağlantının sağlandığına dair bir bildirimi saatin yanında çıkan baloncukta göreceksiniz. Gerektiğinde OpenVPN bağlantısını kesmek ve tekrar açmak için saatin yanındaki OpenVPN ikonuna tıklayarak programı çalıştırabilirsiniz.
+
+Artık bilgisayarınızdaki tüm internet trafiğiniz, kendi VPN sunucunuz üzerinden şifreli bir şekilde gerçekleşecektir.
+          </p>
+          <div class="videos pull-right">
+            <a href="#" class="next-video btn btn-primary">İleriki Video</a>
+          </div>
+          <div class="videos pull-right">
+            <a href="#" class="next-video btn btn-primary">Windows</a>
+            <a href="#" class="next-video btn btn-primary">Mac</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../layouts/footer.html')
+  @@include('../layouts/script.html')
+</body>
+</html>
