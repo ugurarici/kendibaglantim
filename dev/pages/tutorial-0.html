@@ -9,22 +9,12 @@
     <div class="container">
       <div class="col-md-3">
         <h1>Kurulum Adımları</h1>
-        <div class="list-group">
-          <a href="#" class="list-group-item active">Tanıtım: İnternet ve VPN</a>
-          <a href="#" class="list-group-item">#0 Giriş</a>
-          <a href="#" class="list-group-item">#1 Sunucu Kiralama</a>
-          <a href="#" class="list-group-item">#2A Mac Üzerinden Sunucu Kurulumu</a>
-          <a href="#" class="list-group-item">#2B Windows Üzerinden Sunucu Kurulumu</a>
-          <a href="#" class="list-group-item">#3 Mac Bilgisayarlara İstemci Kurulumu</a>
-          <a href="#" class="list-group-item">#4 Windows Bilgisayarlara İstemci Kurulumu</a>
-          <a href="#" class="list-group-item">#5 iOS Cihazlara İstemci Kurulumu</a>
-          <a href="#" class="list-group-item">#6 Android Cihazlara İstemci Kurulumu</a>
-        </div>
+        @@include('../layouts/list-group.html',{"tutorial-0":"active"})
       </div>
       <div class="col-md-9">
         <div class="content">
           <h1>#0 Giriş</h1>
-          <iframe width="440" height="258" src="https://www.youtube.com/embed/hxh3yQmQcGs?list=PL2jZMx6EhNFOCZPf9v4AGzR6_afE8tegw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="440" height="258" src="https://www.youtube.com/embed/hxh3yQmQcGs" frameborder="0" allowfullscreen></iframe>
           <p>
             Kendi VPN sistemimizi kurmak için basit birkaç adım uygulayacağız. Her şeyden önce internetle şifreli konuşmamıza aracılık edecek bir VPN sunucusuna ihtiyacımız var. Bunun için bir sunucu kiralayacağız. DigitalOcean’dan kiralanacak ucuz bir sunucu işimizi görecektir. Bu sunucunun aylık kira bedeli 5$ ve referans linkimizden üye olduğunuzda 10$ kredi kazanacaksınız, yani ilk 2 aylık bedava VPN kullanmış olacaksınız.
             Sunucumuzu kiraladıktan sonra bu sunucunun VPN haberleşmesini sağlayabilmesi için üzerine basit bir kurulum yapmamız gerekecek. Bu işlem için OpenVPN kullanacağız. Sunucuya bağlandıktan sonra bu kurulumu yalnızca tek satırlık bir kod ile yapacağız.
@@ -34,13 +24,10 @@
             Hazırsanız Sunucu Kiralama adımıyla başlayalım.
           </p>
           <div class="videos pull-right">
-            <a href="#" class="next-video btn btn-primary">İleriki Video</a>
+            <a href="tutorial.html" class="next-video btn btn-primary">Önceki Video</a>
+            <a href="tutorial-1.html" class="next-video btn btn-primary">İleriki Video</a>
           </div>
-          <div class="videos pull-right">
-            <a href="#" class="next-video btn btn-primary">Windows</a>
-            <a href="#" class="next-video btn btn-primary">Mac</a>
-          </div>
-
+          
         </div>
       </div>
     </div>

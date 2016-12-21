@@ -9,22 +9,12 @@
     <div class="container">
       <div class="col-md-3">
         <h1>Kurulum Adımları</h1>
-        <div class="list-group">
-          <a href="#" class="list-group-item active">Tanıtım: İnternet ve VPN</a>
-          <a href="#" class="list-group-item">#0 Giriş</a>
-          <a href="#" class="list-group-item">#1 Sunucu Kiralama</a>
-          <a href="#" class="list-group-item">#2A Mac Üzerinden Sunucu Kurulumu</a>
-          <a href="#" class="list-group-item">#2B Windows Üzerinden Sunucu Kurulumu</a>
-          <a href="#" class="list-group-item">#3 Mac Bilgisayarlara İstemci Kurulumu</a>
-          <a href="#" class="list-group-item">#4 Windows Bilgisayarlara İstemci Kurulumu</a>
-          <a href="#" class="list-group-item">#5 iOS Cihazlara İstemci Kurulumu</a>
-          <a href="#" class="list-group-item">#6 Android Cihazlara İstemci Kurulumu</a>
-        </div>
+        @@include('../layouts/list-group.html',{"tutorial-2":"active"})
       </div>
       <div class="col-md-9">
         <div class="content">
           <h1>#2A Mac Üzerinden Sunucu Kurulumu</h1>
-          <iframe width="440" height="258" src="*****" frameborder="0" allowfullscreen></iframe>
+          <iframe width="440" height="258" src="https://www.youtube.com/embed/8D_SnCNbTzY" frameborder="0" allowfullscreen></iframe>
           <p>
             <ul>
 <li>DigitalOcean da sunucu oluşturduktan sonra bu sunucunun bilgileri mail adresimize iletilmiş oluyor. Bu kısımda bu bilgileri kullanarak </li>sunucumuza bağlanacağız ve gerekli ayarlamaları yaparak bağlantıya hazır hale getireceğiz.</li>
@@ -56,13 +46,9 @@ scp username@IpAddress:~İstemcinizeVerdiğinizAd.ovpn ~/   yazarak enter tuşun
 <li>Bu dosyaları anadizinde görebilirsiniz.</li>
 </ul>
           <div class="videos pull-right">
-            <a href="#" class="next-video btn btn-primary">İleriki Video</a>
+            <a href="tutorial-1.html" class="next-video btn btn-primary">Önceki Video</a>
+            <a href="tutorial-3.html" class="next-video btn btn-primary">İleriki Video</a>
           </div>
-          <div class="videos pull-right">
-            <a href="#" class="next-video btn btn-primary">Windows</a>
-            <a href="#" class="next-video btn btn-primary">Mac</a>
-          </div>
-
         </div>
       </div>
     </div>
