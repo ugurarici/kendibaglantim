@@ -89,7 +89,7 @@
 	@@include('../layouts/script.html')
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$(".more-info").click(function(e) {
+			$("header div.container a.more-info").click(function(e) {
 				e.preventDefault();
 				$('html, body').animate({
 					scrollTop: $("#more-info-video").offset().top
